@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="在React组件中  受控组件: 基于数据驱动(修改状态数据, React帮助我们重新渲染视图)完成的组件, 它受数据的管控 非受控组件: 基于ref操作DOM实现视图更新, 它不受数据的管控  真实项目中, 建议大家多使用受控组件  Vue: MVVM, 数据更改视图跟着更改, 视图更改数据也跟着更改(双向数据绑定) React: MVC, 数据更改视图跟着更改(原本是单向数据绑定, 但是我们可">
+<meta property="og:type" content="article">
+<meta property="og:title" content="code">
+<meta property="og:url" content="http://yoursite.com/2018/06/21/code/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="在React组件中  受控组件: 基于数据驱动(修改状态数据, React帮助我们重新渲染视图)完成的组件, 它受数据的管控 非受控组件: 基于ref操作DOM实现视图更新, 它不受数据的管控  真实项目中, 建议大家多使用受控组件  Vue: MVVM, 数据更改视图跟着更改, 视图更改数据也跟着更改(双向数据绑定) React: MVC, 数据更改视图跟着更改(原本是单向数据绑定, 但是我们可">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-06-21T15:51:46.741Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="code">
+<meta name="twitter:description" content="在React组件中  受控组件: 基于数据驱动(修改状态数据, React帮助我们重新渲染视图)完成的组件, 它受数据的管控 非受控组件: 基于ref操作DOM实现视图更新, 它不受数据的管控  真实项目中, 建议大家多使用受控组件  Vue: MVVM, 数据更改视图跟着更改, 视图更改数据也跟着更改(双向数据绑定) React: MVC, 数据更改视图跟着更改(原本是单向数据绑定, 但是我们可">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/21/code/"/>
 
 
 
 
 
-  <title>Hexo</title>
+  <title>code | Hexo</title>
   
 
 
@@ -140,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -234,9 +237,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -266,9 +269,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/21/code/" itemprop="url">code</a></h1>
+          <h1 class="post-title" itemprop="name headline">code</h1>
         
 
         <div class="post-meta">
@@ -318,9 +319,7 @@
       
 
       
-        
-          
-            <p>在React组件中</p>
+        <p>在React组件中</p>
 <ol>
 <li>受控组件: 基于数据驱动(修改状态数据, React帮助我们重新渲染视图)完成的组件, 它受数据的管控</li>
 <li>非受控组件: 基于ref操作DOM实现视图更新, 它不受数据的管控</li>
@@ -365,8 +364,6 @@
 <p>3) this实例: 方法间的数据共享</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> PropTypes <span class="keyword">from</span> <span class="string">'prop-types'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'../static/css/slider.css'</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="class"><span class="keyword">class</span> <span class="title">Slider</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line">  <span class="comment">// 设置属性的默认值</span></span><br><span class="line">  <span class="keyword">static</span> defaultProps = &#123;</span><br><span class="line">    data: [],</span><br><span class="line">    interval: <span class="number">3000</span>,</span><br><span class="line">    step: <span class="number">1</span>,</span><br><span class="line">    speed: <span class="number">300</span></span><br><span class="line">  &#125;;</span><br><span class="line">  <span class="keyword">static</span> propTypes = &#123;</span><br><span class="line">    data: PropTypes.array,</span><br><span class="line">    interval: PropTypes.number,</span><br><span class="line">    step: PropTypes.number,</span><br><span class="line">    speed: PropTypes.number</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">constructor</span>(props) &#123;</span><br><span class="line">    <span class="keyword">super</span>(props);</span><br><span class="line">    <span class="comment">// init state</span></span><br><span class="line">    <span class="keyword">let</span> &#123;step, speed&#125; = <span class="keyword">this</span>.props;</span><br><span class="line">    <span class="keyword">this</span>.state = &#123;</span><br><span class="line">      step,</span><br><span class="line">      speed</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 数据克隆</span></span><br><span class="line">  componentWillMount() &#123;</span><br><span class="line">    <span class="comment">// 在挂载之前, 实现数据的克隆, 因为数据克隆操作只操作一次即可, 所以放到这里执行</span></span><br><span class="line">    <span class="keyword">let</span> &#123;data&#125; = <span class="keyword">this</span>.props;</span><br><span class="line">    <span class="keyword">let</span> cloneData = data.slice(<span class="number">0</span>);</span><br><span class="line">    cloneData.push(data[<span class="number">0</span>]);</span><br><span class="line">    cloneData.unshift(data[data.length<span class="number">-1</span>]);</span><br><span class="line">    <span class="keyword">this</span>.cloneData = cloneData; <span class="comment">// 将cloneData挂载到实例上供其他方法调用</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 自动轮播</span></span><br><span class="line">  componentDidMount() &#123;</span><br><span class="line">    <span class="comment">// 把定时器返回值挂载到实例上, 方便后期清除: 结束自动轮播</span></span><br><span class="line">    <span class="keyword">this</span>.autoTimer = setInterval(<span class="keyword">this</span>.autoMove, <span class="keyword">this</span>.props.interval);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  componentWillUpdate(nextProps, nextState) &#123;</span><br><span class="line">    <span class="comment">//如果最新修改的step索引大于最大索引，说明此时已经是末尾了，不能再向后走了，我们让其立即（无动画）回到索引为1的位置</span></span><br><span class="line">    <span class="keyword">if</span> (nextState.step &gt; <span class="keyword">this</span>.cloneData.length<span class="number">-1</span>) &#123;</span><br><span class="line">      <span class="keyword">this</span>.setState(&#123;</span><br><span class="line">        step: <span class="number">1</span>,</span><br><span class="line">        speed: <span class="number">0</span></span><br><span class="line">      &#125;);</span><br><span class="line">      <span class="comment">// clearInterval(this.autoTimer);</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  componentDidUpdate() &#123;</span><br><span class="line">    <span class="comment">// 只有是从克隆的第一张立即切换到真实的第一张后, 我们才做如下处理:</span></span><br><span class="line">    <span class="comment">// 让其从当前第一张运动到第二张即可</span></span><br><span class="line">    <span class="keyword">let</span> &#123;step, speed&#125; = <span class="keyword">this</span>.state;</span><br><span class="line">    <span class="keyword">if</span> (step === <span class="number">1</span> &amp;&amp; speed === <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="comment">// 为啥要设置定时器延时, CSS3的transition有一个问题(主栈执行的时候, 短时间内遇到两次设置transition-duration的代码, 以最后一次设置的为主)</span></span><br><span class="line">      <span class="keyword">let</span> delayTimer = setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">        clearTimeout(delayTimer);</span><br><span class="line">        <span class="keyword">this</span>.setState(&#123;</span><br><span class="line">          step: step + <span class="number">1</span>,</span><br><span class="line">          speed: <span class="keyword">this</span>.props.speed</span><br><span class="line">        &#125;);</span><br><span class="line">      &#125;, <span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">let</span> &#123;data&#125; = <span class="keyword">this</span>.props,</span><br><span class="line">        &#123;cloneData&#125; = <span class="keyword">this</span>;</span><br><span class="line">    <span class="keyword">if</span> (data.length === <span class="number">0</span>) &#123; <span class="keyword">return</span> <span class="string">''</span>; &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 控制wrapper的样式</span></span><br><span class="line">    <span class="keyword">let</span> &#123;step, speed&#125; = <span class="keyword">this</span>.state;</span><br><span class="line">    <span class="keyword">let</span> wrapperStyle = &#123;</span><br><span class="line">      width: cloneData.length * <span class="number">1000</span> + <span class="string">'px'</span>,</span><br><span class="line">      left: -step * <span class="number">1000</span> + <span class="string">'px'</span>,</span><br><span class="line">      transition: <span class="string">`left <span class="subst">$&#123;speed&#125;</span>ms linear 0ms`</span></span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> &lt;section className="container"&gt;</span><br><span class="line">      &lt;ul className="wrapper" style=&#123;wrapperStyle&#125;&gt;</span><br><span class="line">        &#123;cloneData.map((item, index) =&gt; &#123;</span><br><span class="line">          let &#123;title, pic&#125; = item;</span><br><span class="line">          return &lt;li key=&#123;index&#125;&gt;</span><br><span class="line">            &lt;img src=&#123;pic&#125; alt=&#123;title&#125; /&gt;</span><br><span class="line">          &lt;/li&gt;;</span><br><span class="line">        &#125;)&#125;</span><br><span class="line">      &lt;/ul&gt;</span><br><span class="line">      &lt;ul className="focus"&gt;</span><br><span class="line">        &#123;data.map((item, index) =&gt; &#123;</span><br><span class="line">          let tempIndex = step - 1;</span><br><span class="line">          tempIndex = (step === 0) ? (data.length - 1) :(step - 1);</span><br><span class="line">          tempIndex = (step === (cloneData.length - 1)) ? 0 : (step - 1);</span><br><span class="line">          return &lt;li key=&#123;index&#125; className=&#123;index === tempIndex ? 'active' : ''&#125;&gt;&lt;/li&gt;;</span><br><span class="line">        &#125;)&#125;</span><br><span class="line">      &lt;/ul&gt;</span><br><span class="line">      &lt;a href="javascript:;" className="arrow arrowLeft"&gt;&lt;/a&gt;</span><br><span class="line">      &lt;a href="javascript:;" className="arrow arrowRight"&gt;&lt;/a&gt;</span><br><span class="line">    &lt;/section&gt;;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  // 向右切换</span><br><span class="line">  autoMove = () =&gt; &#123;</span><br><span class="line">    this.setState(&#123;</span><br><span class="line">      step: this.state.step + 1</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
@@ -383,131 +380,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/10/test/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ilexwg">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/10/test/" itemprop="url">test</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-10T15:10:36+08:00">
-                2018-06-10
-              </time>
+              <a href="/2018/06/10/test/" rel="next" title="test">
+                <i class="fa fa-chevron-left"></i> test
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -517,258 +411,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/07/hello-HEXO/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ilexwg">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/07/hello-HEXO/" itemprop="url">hello HEXO</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-07T14:54:55+08:00">
-                2018-06-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Hello-HEXO"><a href="#Hello-HEXO" class="headerlink" title="Hello HEXO"></a>Hello HEXO</h1><p>这是一篇测试网页</p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/06/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ilexwg">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/06/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-06T18:03:06+08:00">
-                2018-06-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -776,6 +423,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -988,6 +639,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
